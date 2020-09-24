@@ -77,8 +77,8 @@ def downloadPano():
             blank_image.paste(im, (512 * x, 512 * y))
     #Save the image
     blank_image.save(output_file + '.jpeg')
-    #change to 664 (not sure if needed)
-    os.chmod(output_file + '.jpeg', 664)
+    #I changed this 436 from 664 for permission
+    os.chmod(output_file + '.jpeg', 436)
     
     
 #latlon of camera location 
